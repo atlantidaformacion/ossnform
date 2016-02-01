@@ -28,7 +28,7 @@
     resize:vertical;
 }
 .ossn-form input[type='submit'] {
-	margin-top:5px;
+    margin-top:5px;
     margin-bottom:5px;
 }
 .ossn-red-borders {
@@ -41,7 +41,7 @@
     display: none;
 }
 p {
-    font-size: 15px;
+    font-size: 17px;
 }
 .col-center {
     float: none;
@@ -52,25 +52,45 @@ p {
     width: 100%;
 }
 .center-row {
-	display: table-cell;
+    display: table-cell;
     text-align: center;
 }
 .radio-block {
-	margin-top:10px;
+    margin-top:10px;
     margin-bottom:10px;
 }
 .radio-block span {
     display: inline-block;
     margin-right: 10px;
-    
+
     font-size: 15px;
     font-weight: bold;
     margin-left: 10px;    
 }
 
 /************************************
-	Layouts
+        Layouts
 ************************************/
+.row:after,.row:before{
+    display:table;
+    content:" "
+}
+.row:after{clear:both}
+.row{
+    margin-right:-15px;
+    margin-left:-15px
+}
+.col-md-6{
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px
+}
+@media (min-width:992px) {
+    .col-md-6{
+        float:left
+    }
+}
 /** didn't we have a minimum page height in goblue? #702 **/
 .ossn-layout-module,
 .ossn-layout-contents,
@@ -94,7 +114,7 @@ p {
 }
 
 .ossn-layout-startup  footer .ossn-footer-menu a {
-	color:#fff;
+    color:#fff;
 }
 .ossn-home-container {
     padding: 5% 0px;
@@ -131,7 +151,7 @@ p {
     display: inline-table;
 }
 .ossn-layout-media {
-	margin-top:10px;
+    margin-top:10px;
 }
 .ossn-layout-media .like-share,
 .ossn-layout-media .comments-list {
@@ -148,32 +168,32 @@ p {
     min-height: 500px;
 }
 .ossn-home-container .row {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0;
+    margin-left: 0;
 }
 #ossn-signup-errors {
     display: none;
     margin-top:10px;
 }
 .ossn-error-page  {
-	text-align:center;
-        padding: 100px;
+    text-align:center;
+    padding: 100px;
 }
 .ossn-error-page .error-heading {
-	font-size: 50px;
+    font-size: 50px;
     font-weight: bold;
 }
 .ossn-error-page .error-text {
-	font-size: 16px;
+    font-size: 16px;
 }
 .ossn-error-page  .fa-exclamation-triangle {
     font-size: 100px;
 }
 .ossn-group-members {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 /*******************************
-	Topbar	
+        Topbar	
 ********************************/
 
 .topbar {
@@ -196,7 +216,7 @@ p {
     font-weight: bold;
 }
 .topbar .site-name a:hover {
-	text-decoration:none;
+    text-decoration:none;
 }
 
 .topbar-menu-left {
@@ -255,7 +275,7 @@ p {
     margin: 1px -120px 0;
 }
 /***********************************
-	Ossn Wall
+        Ossn Wall
 *************************************/
 
 .ossn-wall {} .ossn-wall-items {} .ossn-wall-item {
@@ -400,10 +420,10 @@ p {
 }
 .ossn-wall-item p,
 .ossn-wall-item .friends {
-	display:inline-block;
+    display:inline-block;
 }
 /*******************************
-	Comments Likes
+        Comments Likes
 ********************************/
 
 .ossn-comment-menu {
@@ -497,7 +517,7 @@ p {
     position: relative;
 }
 /*********************************
-	Like
+        Like
 ************************************/
 
 .like-share {
@@ -516,7 +536,7 @@ p {
     margin-left: 10px;
 }
 /********************************
-	Global
+        Global
 ***********************************/
 
 .time-created {
@@ -525,7 +545,7 @@ p {
     color: #999;
 }
 /********************************
-	Sidebar Nav
+        Sidebar Nav
 *********************************/
 
 .sidebar {
@@ -664,12 +684,12 @@ p {
         width: 100%;
         margin-bottom: 10px;
     }
-	.ossn-group-members { 
-		height: 75px !important;
-	}    
+    .ossn-group-members { 
+        height: 75px !important;
+    }    
 }
 /******************************
-	Ossn global css clsses
+        Ossn global css clsses
 *******************************/
 
 .right {
@@ -694,7 +714,7 @@ p {
     margin-top: 20px;
 }
 /************************
-	Dropdown
+        Dropdown
 ***************************/
 
 .dropdown-submenu {
@@ -743,7 +763,7 @@ p {
     right: 0;
 }
 /******************************************
-	Ossn Ads
+        Ossn Ads
 *******************************************/
 
 .ossn-ad-item {} .ossn-ad-item .ad-image {
@@ -767,15 +787,15 @@ p {
     text-align: justify;
 }
 /*****************************
-	Widgets
+        Widgets
 ******************************/
 
 .ossn-widget {
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
 }
 .ossn-widget .widget-heading {
-    background: #F9F7F7;
+    background: transparent;
     border: 1px solid #eee;
     padding: 10px;
     font-weight: bold;
@@ -785,7 +805,7 @@ p {
     border-bottom: 1px solid #eee;
 }
 /***********************************
-	Ossn Notifications
+        Ossn Notifications
 ***************************************/
 
 .ossn-notifications-box {
@@ -945,7 +965,7 @@ p {
     max-height: 400px;
 }
 /*******************************
-	Profile
+        Profile
 ********************************/
 
 .ossn-profile .top-container {
@@ -963,7 +983,7 @@ p {
     background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, .38) 100%);
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, .38) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, .38) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#94000000', GradientType=0);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#94000000', GradientType=0);*/
 }
 .ossn-profile .top-container .profile-cover img {
     width: 100%;
@@ -1141,7 +1161,7 @@ p {
     display: inline-block;
 }
 /******************************
-	Search
+        Search
 ******************************/
 
 .ossn-menu-search li {
@@ -1169,23 +1189,23 @@ p {
     margin-left: 25px;
 }
 .ossn-menu-search-users .text:before {
-	font-family: FontAwesome;
-	content: "\f007";
-	display: absolute;
-	padding-right: 10px;
-	vertical-align: middle;
-	float: left; 
+    font-family: FontAwesome;
+    content: "\f007";
+    display: absolute;
+    padding-right: 10px;
+    vertical-align: middle;
+    float: left; 
 }
 .ossn-menu-search-groups .text:before {
-	font-family: FontAwesome;
-	content: "\f0c0";
-	display: absolute;
-	padding-right: 10px;
-	vertical-align: middle;
-	float: left; 
+    font-family: FontAwesome;
+    content: "\f0c0";
+    display: absolute;
+    padding-right: 10px;
+    vertical-align: middle;
+    float: left; 
 }
 /******************************
-	Token Input
+        Token Input
 *******************************/
 
 ul.token-input-list {
@@ -1294,7 +1314,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     font-weight: bold;
 }
 /******************************************
-		System Messages
+                System Messages
 *******************************************/
 
 .ossn-system-messages .ossn-system-messages-inner {
@@ -1303,7 +1323,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     display:none;
 }
 .ossn-system-messages .ossn-system-messages-inner .alert {
-	margin-bottom:0px;
+    margin-bottom:0px;
 }
 /** v1-v3 compitible **/
 .ossn-message-done {
@@ -1314,7 +1334,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     text-align: left;
 }
 /*************************************
-	0ssn modal box
+        0ssn modal box
 ***************************************/
 
 .ossn-halt {
@@ -1451,13 +1471,13 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     margin-right: 13px;
 }
 /*******************************
-	Ossn Blocked
+        Ossn Blocked
 *********************************/
 .ossn-blocked i {
     font-size: 100px;
 }
 .ossn-blocked {
-	text-align: center;
+    text-align: center;
     padding: 100px;
 }
 .ossn-blocked div {
@@ -1468,7 +1488,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     font-size: 16px;
 }
 /********************************
-	Loading Icon
+        Loading Icon
     @source: https://github.com/jlong/css-spinners
 *********************************/
 
@@ -1527,7 +1547,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     margin-top: 37px;
 }
 /*******************************
-	Buttons
+        Buttons
 *********************************/
 
 .button-grey,
@@ -1564,7 +1584,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     background: linear-gradient(#E4E4E3, #F5F6F6);
 }
 /******************************
-	Users List
+        Users List
 *******************************/
 
 .ossn-users-list-item .users-list-controls {
@@ -1593,7 +1613,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     text-align: center;
 }
 /*********************************
-	Footer
+        Footer
 **********************************/
 
 footer {
@@ -1629,7 +1649,7 @@ footer .ossn-footer-menu a:last-child::after {
     text-transform: uppercase;
 }
 /****************************
-	Home
+        Home
 ****************************/
 
 .home-left-contents {
@@ -1651,10 +1671,10 @@ footer .ossn-footer-menu a:last-child::after {
     margin-top: 10px;
 }
 #ossn-home-signup p {
-	margin-top:10px;
+    margin-top:10px;
 }
 /**************************
-	System
+        System
 ***************************/
 
 .ossn-list-users {
@@ -1688,10 +1708,10 @@ footer .ossn-footer-menu a:last-child::after {
     overflow: hidden;
 }
 .sidebar-menu-nav .sidebar-menu .menu-content {
-        display: block;
+    display: block;
 }
 .ossn-box-inner {
-	width:446px;
+    width:446px;
 }
 .home-left-contents .some-icons i {
     font-size: 50px;
@@ -1704,7 +1724,7 @@ footer .ossn-footer-menu a:last-child::after {
     padding: 20px;
     margin-right: 20px;
     margin-bottom: 20px; 
-    
+
     width: 100px;
     height: 100px;   
 }
@@ -1713,7 +1733,7 @@ footer .ossn-footer-menu a:last-child::after {
     text-align: center;
 }
 /**************************
-	Similies
+        Similies
 **************************/
 .ossn-smiley-item {
     display: inline-block !important;
@@ -1725,30 +1745,30 @@ footer .ossn-footer-menu a:last-child::after {
     border: 0px !important;
 }
 /**************************
-	Embed
+        Embed
  **************************/
 .ossn_embed_video {
-	margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
- 	padding-top:0px;
- 
+    padding-top:0px;
+
 }
 /**************************
-	Photos
+        Photos
 ***************************/
 .ossn-photo-viewer .image-block img,
 .ossn-photo-viewer {
-     max-width: 100% !important;
+    max-width: 100% !important;
 }
 /**************************
-	Mobile Layout Settings
+        Mobile Layout Settings
 ***************************/
 
 @media (max-width: 480px) {
     /***********************
-    	Comments
+        Comments
      ***********************/
-    
+
     .comments-list .comments-item .comment-user-img {
         display: none;
     }
@@ -1756,9 +1776,9 @@ footer .ossn-footer-menu a:last-child::after {
         padding-left: 15px;
     }
     /************************
-    	Wall
+        Wall
      ************************/
-    
+
     .ossn-wall-item-type {
         display: block;
     }
@@ -1780,15 +1800,15 @@ footer .ossn-footer-menu a:last-child::after {
     .ossn-list-users a.right.btn.btn-danger {
         display: none;
     }
-   .ossn-message-box .contents {
+    .ossn-message-box .contents {
         height: 280px ;
         overflow-x: auto;
-		overflow: overlay;
+        overflow: overlay;
     }
     /***************************
-    	Topbar notification box
+        Topbar notification box
    *****************************/
-    
+
     .ossn-notifications-box {
         width: 300px;
     }
@@ -1809,9 +1829,9 @@ footer .ossn-footer-menu a:last-child::after {
         text-overflow: ellipsis;
     }
     /******************************
-    	Profile
+        Profile
     ********************************/
-    
+
     .ossn-profile .profile-photo img {
         width: 100px;
         height: 100px;
@@ -1855,9 +1875,9 @@ footer .ossn-footer-menu a:last-child::after {
         display: none;
     }
     /*****************************
-     	System
+        System
      *****************************/
-    
+
     .ossn-users-list-item img {
         display: none;
     }
@@ -1886,30 +1906,30 @@ footer .ossn-footer-menu a:last-child::after {
         padding-bottom: 10px;
     }
     .ossn-widget .widget-contents {
-    	padding:5px;
+        padding:5px;
     }
     .ossn-message-box {
-    	min-width: 300px;
+        min-width: 300px;
         width:300px;
     }
     .ossn-box-loading {
-    	margin-left: 150px;
-		margin-top: 37px;
+        margin-left: 150px;
+        margin-top: 37px;
     }
     .ossn-message-box .contents input[type="text"] {
-    	width:195px;
+        width:195px;
     }
     .ossn-box-inner {
-    	width:280px;
+        width:280px;
     }
     footer .ossn-footer-menu a:nth-last-child(2)::after {
-    	content:"|";
+        content:"|";
     }
 
     /**********************
-    	Groups
+        Groups
     ************************/
-    
+
     .ossn-group-cover img {
         top: auto !important;
     }
@@ -1966,12 +1986,12 @@ footer .ossn-footer-menu a:last-child::after {
         display: none;
     }
     .home-left-contents .some-icons {
-    	display:none;
+        display:none;
     }
     /**************************
-     	Layouts
+        Layouts
      ****************************/
-    
+
     .newsfeed-right {
         display: none;
     }
@@ -1983,9 +2003,9 @@ footer .ossn-footer-menu a:last-child::after {
         margin-left: 0px !important;
     }
     /*************************
-     	Home Page
+        Home Page
      **************************/
-    
+
     .logo img {
         width: 260px;
     }
@@ -1996,32 +2016,32 @@ footer .ossn-footer-menu a:last-child::after {
         margin-bottom: 20px;
     }
     /*****************************
-    	Wall Menu
+        Wall Menu
     ******************************/
     .dropdown-menu {
-    	margin-left: -110px;
+        margin-left: -110px;
     }
     .menu-footer-powered {
-    	float:none;
+        float:none;
     }
 }
 /***************************************
-	Tablets
+        Tablets
 ****************************************/
 
 @media only screen and (max-width: 992px) {
     .ossn-group-cover img {
         top: auto !important;
     }
-	.dropdown-menu {
-    	margin-left: -110px;
+    .dropdown-menu {
+        margin-left: -110px;
     }     
     .ossn-profile .user-fullname {
-    	max-width:500px;
+        max-width:500px;
     }
 
     /***********************
-    	Comments
+        Comments
      ***********************/
     .comments-list .comments-item .comment-user-img {
         display: none;
@@ -2030,16 +2050,16 @@ footer .ossn-footer-menu a:last-child::after {
         padding-left: 15px;
     }
     /**************************
-     	Layouts
+        Layouts
      ****************************/
-    
+
     .newsfeed-right {
         display: none;
     }
     /*******************
-     	Messages
+        Messages
      *******************/
-    
+
     .ossn-messages .message-with .user-icon,
     .ossn-messages .messages-recent .messages-from .user-item .image {
         display: none;
@@ -2057,17 +2077,17 @@ footer .ossn-footer-menu a:last-child::after {
     .comments-list .comments-item .comment-user-img {
         display: none;
     }
-     .comments-list .comments-item .col-md-11 {
-    		width: 100%;
-	 }
+    .comments-list .comments-item .col-md-11 {
+        width: 100%;
+    }
     .comments-item .col-md-11 {
         padding-left: 15px;
     }
     .group-search-details {
-    	margin-left: 10px;
+        margin-left: 10px;
     }
     .ossn-search-page .ossn-users-list-item .uinfo {
-    	margin-left: 35px;    
+        margin-left: 35px;    
     }
     .ossn-search-page .ossn-users-list-item .uinfo a {
         text-overflow: ellipsis;
@@ -2076,21 +2096,21 @@ footer .ossn-footer-menu a:last-child::after {
         overflow: hidden;
     }
     .ossn-users-list-item .users-list-controls {
-    	margin-bottom:10px;
+        margin-bottom:10px;
     }
     .ossn-profile .user-fullname {
-    	max-width: 640px;
+        max-width: 640px;
     }    
 }
 @media only screen and (max-width: 767px) {
     .ossn-profile .user-fullname {
-    	max-width: 767px;
+        max-width: 767px;
     }
     .ossn-search-page .ossn-users-list-item .uinfo {
-	margin-left: 0;	
+        margin-left: 0;	
     }
 }
- .ossn-profile-module-friends img {
+.ossn-profile-module-friends img {
     padding: 1.5px;
 }
 .ossn-profile-module-friends .user-image {
@@ -2117,13 +2137,13 @@ footer .ossn-footer-menu a:last-child::after {
     color: #ccc;
 }
 .ossn-profile-extra-menu {
-	display:inline-block;
+    display:inline-block;
 }
 .ossn-profile-extra-menu .btn-action i {
- 	 margin: 0 auto;
+    margin: 0 auto;
 }
 .ossn-profile .profile-cover img {
-	position: relative;
+    position: relative;
 }
 .ossn-form textarea#post-edit {
     height: 125px;
@@ -2151,33 +2171,33 @@ footer .ossn-footer-menu a:last-child::after {
     margin-left: 40px;
     padding-bottom: 10px;
     margin-top: -5px;
-	display:none;
+    display:none;
 }
 .ossn-comment-attachment  .image-data  {
-	padding: 6px;
-	background: #fff;
+    padding: 6px;
+    background: #fff;
     border: 1px solid #eee;
     /* Please, check scaling algorithm of comment picture previews #682 */
     display: flex;
     max-height: 200px;        
 }
 .ossn-comment-attachment  .image-data img {
-	max-width:100%;
-	height: 180px;
-	border: 1px solid #ccc;
+    max-width:100%;
+    height: 180px;
+    border: 1px solid #ccc;
 }
 .ossn-viewer-comments .ossn-comment-attachment {
-	width:115px;
+    width:115px;
 }
 .ossn-viewer .comments-item .row {
-	margin-left:10px;
+    margin-left:10px;
     margin-right:10px;
 }
 .ossn-viewer .comments-item .col-md-1 {
-	display:none;
+    display:none;
 }
 .ossn-viewer-comments .comments-likes .ossn-comment-attach-photo .fa-camera {
-	float:none;
+    float:none;
     margin-right:0px;
     margin-left:10px;
 }
@@ -2188,7 +2208,7 @@ footer .ossn-footer-menu a:last-child::after {
     margin-top: 5px;
 }
 .ossn-viewer-comments .like-share {
-	margin-left:0px;
+    margin-left:0px;
     margin-right:0px;
 }
 .ossn-form textarea#comment-edit{
@@ -2198,20 +2218,20 @@ footer .ossn-footer-menu a:last-child::after {
     color: #EC2020 !important;
 }
 .ossn-likes-view a.right.btn.btn-danger{
-	font-size: 12px;
-  	margin-top: 8px;
-	margin-right: 5px;
-    	padding: 3px 5px 3px 5px;
-    	border-radius: 1px;
-    	display: none;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-right: 5px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 1px;
+    display: none;
 }
 .ossn-likes-view a.right.btn.btn-primary{
-	font-size: 12px;
-	margin-top: 8px;
-	margin-right: 5px;
-    	padding: 3px 5px 3px 5px;
-    	border-radius: 1px;
-    	display: none;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-right: 5px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 1px;
+    display: none;
 }
 .ossn-profile-module-albums img {
     padding: 1.5px;
@@ -2284,7 +2304,7 @@ footer .ossn-footer-menu a:last-child::after {
     font-size: 12px;
 }
 .ossn-profile-module-albums {
-	
+
 }
 .ossn-profile-module-albums a {
     margin-left: 3px;
@@ -2296,17 +2316,17 @@ footer .ossn-footer-menu a:last-child::after {
     margin-top:0px;
 }
 .ossn-photo-menu {
-	margin-top:10px;
+    margin-top:10px;
 }
 .ossn-photo-viewer .image-block {
-	text-align: center;
+    text-align: center;
     min-height:200px;
 }
 .ossn-notification-icon-comment {
-	display: inline-block;
+    display: inline-block;
 }	
 .ossn-notification-icon-comment:before {
-	content: "\f075";
+    content: "\f075";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -2316,7 +2336,7 @@ footer .ossn-footer-menu a:last-child::after {
     display: inline-block;
 }
 .ossn-notification-icon-tag:before {
-	content: "\f075";
+    content: "\f075";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -2326,7 +2346,7 @@ footer .ossn-footer-menu a:last-child::after {
     display: inline-block;
 }
 .ossn-notification-icon-like:before {
-	content: "\f087";
+    content: "\f087";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -2336,7 +2356,7 @@ footer .ossn-footer-menu a:last-child::after {
     display: inline-block;
 }	
 .ossn-notification-icon-like-post:before {
-	content: "\f087";
+    content: "\f087";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -2347,12 +2367,12 @@ footer .ossn-footer-menu a:last-child::after {
     margin-left: 5px;
 }
 .ossn-notification-friend-submit {
-	background:#FFF9D7;
+    background:#FFF9D7;
 }.ossn-search {
     margin-top: 20px;
 }
 .ossn-search input[type='text']{
-	width: 95%;
+    width: 95%;
     margin: 0 auto;
     color: #000;
 }
@@ -2360,7 +2380,7 @@ footer .ossn-footer-menu a:last-child::after {
 
 }
 .ossn-messages .messages-recent .widget-contents {
-	padding:0px;
+    padding:0px;
 }
 .ossn-messages .messages-recent .messages-from {
     max-height: 555px;
@@ -2370,24 +2390,24 @@ footer .ossn-footer-menu a:last-child::after {
 .ossn-messages .messages-recent .messages-from .user-item {
     padding: 10px;
     margin: 0px;
-	cursor:pointer;
+    cursor:pointer;
     border-bottom: 1px solid #eee;    
 }
 .ossn-messages .messages-recent .messages-from .user-item .image {
     margin-top: 3px;
-	border-radius: 16px;
+    border-radius: 16px;
 }
 .ossn-messages .messages-recent .messages-from .user-item .name {
-       font-weight: bold;
+    font-weight: bold;
     display: inline-block;
-        font-size: 13px;
+    font-size: 13px;
 }
 .ossn-messages .messages-recent .messages-from .message-new {
     background: #F7F7F7;
 }
 .ossn-messages .messages-recent .messages-from .user-item .col-md-10,
 .ossn-messages .messages-recent .messages-from .user-item .col-md-2 {
-	padding:0px;
+    padding:0px;
 }
 .ossn-messages .messages-recent .messages-from .user-item .reply {
     margin-top: 0px;
@@ -2395,12 +2415,12 @@ footer .ossn-footer-menu a:last-child::after {
 }
 .ossn-notification-messages .fa-reply,
 .ossn-messages .messages-recent .messages-from .user-item .reply .fa-reply {
-	font-size:10px;
+    font-size:10px;
     display: inline-block;  
     margin-top:0px;
 }
 .ossn-messages .messages-recent .messages-from .user-item .reply .reply-text {
-	display: inline-block;  
+    display: inline-block;  
 }
 .ossn-messages .messages-recent .messages-from .user-item .time {
     display: inline-block;
@@ -2408,7 +2428,7 @@ footer .ossn-footer-menu a:last-child::after {
 }
 .ossn-messages .message-with  .user-icon {
     margin-top: 15px;
-	border-radius: 25px;
+    border-radius: 25px;
 }
 .ossn-messages .message-form-form .textarea {
 
@@ -2428,60 +2448,60 @@ footer .ossn-footer-menu a:last-child::after {
     padding-top: 10px;
 }
 .ossn-messages .message-with .time-created {
-	float:right;
+    float:right;
     margin-left:5px;
 }
 /*************************
-	Notifications
+        Notifications
 **************************/
 
 .ossn-notification-messages  .user-item {
-	padding: 4px;
-	border-bottom: 1px solid #eee;
+    padding: 4px;
+    border-bottom: 1px solid #eee;
 }
 .ossn-notification-messages .user-item:hover {
-	background:#F6F7F8;
-	cursor:pointer;
+    background:#F6F7F8;
+    cursor:pointer;
 }
 .ossn-notification-messages .message-new {
-	background:#eee;
+    background:#eee;
 }
 .ossn-notification-messages  .user-item .image {
-	display:inline-table;
-	width:50px;
-	height:50px;
+    display:inline-table;
+    width:50px;
+    height:50px;
 }
 .ossn-notification-messages .user-item .data{
-	display:inline-table;
-	float:right;
-	width: 335px;
+    display:inline-table;
+    float:right;
+    width: 335px;
 }
 .ossn-notification-messages .user-item .data .name{
-	font-size: 13px;
-	font-weight: bold;
-	padding: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px;
     margin-top: -3px;
 }
 .ossn-notification-messages .user-item-inner .time {
-	color: #999;
-	float:right;
-      font-size: 14px;
+    color: #999;
+    float:right;
+    font-size: 14px;
     font-style: italic;  
 }
 .ossn-notification-messages .reply-text,
 .ossn-notification-messages .reply-text-from {
-	margin-top: -0px;
-	margin-left: 4px;
+    margin-top: -0px;
+    margin-left: 4px;
 }
 .ossn-notification-messages .messages-from .time {
-	color: #999;
-	float:right;
+    color: #999;
+    float:right;
 }
 .ossn-notification-messages .user-item-inner {
-	padding: 5px;
+    padding: 5px;
 }
 /************************
-	v4.0 chat message
+        v4.0 chat message
 *************************/
 .message-box-recieved {
     background-color: #F2F2F2;
@@ -2754,7 +2774,7 @@ footer .ossn-footer-menu a:last-child::after {
     height: 200px;
 }
 .ossn-group-cover img {
-	width:100%;
+    width:100%;
     position:relative;
 }
 .ossn-group-cover:hover > .ossn-group-cover-button {
@@ -2783,7 +2803,7 @@ footer .ossn-footer-menu a:last-child::after {
     display: inline-block;
 }	
 .ossn-groups-notification-icon:before {
-	content: "\f0c0";
+    content: "\f0c0";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -2797,9 +2817,9 @@ footer .ossn-footer-menu a:last-child::after {
     float: right;
 }
 .group-widget-members img {
-	margin-right:5px;
+    margin-right:5px;
     /* group-widget-members img need bottom margin #699 */
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .ossn-notification-unviewed {
     background: #F9F9F9;
@@ -2808,20 +2828,20 @@ footer .ossn-footer-menu a:last-child::after {
     text-align: justify;
 }
 .ossn-group-profile .group-requests-widget .widget-contents {
-	text-align:center;
+    text-align:center;
 }
 .ossn-group-profile .group-requests-widget a {
     font-weight: bold;
     text-transform: uppercase;
 }
 .ossn-group-members .request-controls {
-	margin-top:20px;
+    margin-top:20px;
 }
 .ossn-group-members .request-controls a {
-	margin-left:5px;
+    margin-left:5px;
 }
 .ossn-group-members .col-md-2 {
-	text-align:center;
+    text-align:center;
 }
 .group-search-details {
     padding: 20px;
@@ -2854,16 +2874,16 @@ footer .ossn-footer-menu a:last-child::after {
 }
 @media only screen
 and (max-width : 1360px) {
-.ossn-site-pages{
-    margin-left: 15px;
-    margin-right: 15px
+    .ossn-site-pages{
+        margin-left: 15px;
+        margin-right: 15px
     }
 }
 @media only screen
 and (min-width : 1360px) {
-.ossn-site-pages{
-    margin-left: 80px;
-    margin-right: 80px
+    .ossn-site-pages{
+        margin-left: 80px;
+        margin-right: 80px
     }
 }
 .ossn-chat-base {
@@ -2909,7 +2929,7 @@ and (min-width : 1360px) {
 .ossn-chat-base .ossn-chat-bar .friends-list {
     background: #F9F9FB;
     width: 195px;
-	min-height: 271px;
+    min-height: 271px;
     margin-top: -271px;
     margin-left: 5px;
     position: fixed;
@@ -2919,11 +2939,11 @@ and (min-width : 1360px) {
     display: none;
 }
 img.ustatus {
-	border-radius: 32px;
+    border-radius: 32px;
 }
 img.ustatus.ossn-chat-icon-online {
     border: 3px solid #4cae4c;
-    }
+}
 .ossn-chat-inner-text {
     width: 145px;
     margin-left: 20px;
@@ -2984,7 +3004,7 @@ img.ustatus.ossn-chat-icon-online {
     overflow: hidden;
     overflow-y: scroll;
     height: 236px;
-    
+
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;    
 }
@@ -3016,7 +3036,7 @@ img.ustatus.ossn-chat-icon-online {
 
 .ossn-chat-base .ossn-chat-bar .friends-list-item .ossn-chat-icon-online {
     border: 3px solid #4cae4c;
-	border-radius: 32px;
+    border-radius: 32px;
 }
 
 .ossn-chat-none {
@@ -3039,7 +3059,7 @@ img.ustatus.ossn-chat-icon-online {
     -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
     border: 1px solid #ccc;
     height: 35px;
-    
+
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
 }
@@ -3113,7 +3133,7 @@ img.ustatus.ossn-chat-icon-online {
     padding: 3px;
 }
 .friend-tab-item .data .message-reciever .user-icon img {
-	width:32px;
+    width:32px;
     height:32px;
 }
 
@@ -3171,8 +3191,8 @@ img.ustatus.ossn-chat-icon-online {
     width: 213px;
     height: 30px;
     padding: 2px;
-	margin-top: -12px;
-	margin-left: -12px;
+    margin-top: -12px;
+    margin-left: -12px;
     position: absolute;
     font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
     font-size: 12px;
@@ -3197,7 +3217,7 @@ img.ustatus.ossn-chat-icon-online {
     font-size: 10px;
     float: left;
     display: none;
-	margin-top: -2px;
+    margin-top: -2px;
     position: absolute;     
 }
 
@@ -3231,7 +3251,7 @@ img.ustatus.ossn-chat-icon-online {
 /** Icons **/
 .ossn-chat-icon {}
 .ossn-chat-icon-online:before {
-	content: "\f111 ";
+    content: "\f111 ";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -3241,7 +3261,7 @@ img.ustatus.ossn-chat-icon-online {
 }
 
 .ossn-chat-icon-offline:before {
-	content: "\f111 ";
+    content: "\f111 ";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -3337,7 +3357,7 @@ and (min-width : 1360px) {
         width: 32px;
         height: 32px;
     }
-	
+
 
     .ossn-chat-windows-long .friends-list-item .name {
         margin-top: -25px;
@@ -3348,16 +3368,16 @@ and (min-width : 1360px) {
         white-space: nowrap;
     }
 
-   .ossn-chat-windows-long .friends-list-item .ossn-chat-icon-online:before {
-    	float: right;
- 	margin-right:4px;
-    	margin-top: -17px;
- 	content: "\f111 ";
-    	font-family: FontAwesome;
-    	font-style: normal;
-    	font-weight: normal;
-    	color: #57B540;
-    	font-size: 12px;
+    .ossn-chat-windows-long .friends-list-item .ossn-chat-icon-online:before {
+        float: right;
+        margin-right:4px;
+        margin-top: -17px;
+        content: "\f111 ";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        color: #57B540;
+        font-size: 12px;
     }
 }
 /** Document **/
@@ -3376,7 +3396,7 @@ and (min-width : 1360px) {
     display: none;
 }
 .friend-tab .ossn-chat-inner-text {
-	margin-top: -2px;
+    margin-top: -2px;
 }
 .ossn-chat-sending-icon {
     background: url("http://nes4.edicionyformacion.com/components/OssnChat/images/loading-small.gif") no-repeat;
@@ -3384,39 +3404,45 @@ and (min-width : 1360px) {
     height: 11px;
 }
 .ossnchat-scroll-top {
-	margin-top:0px !important;
+    margin-top:0px !important;
 }
 
 @media (max-width: 480px){
     .ossn-chat-base {
-    	display:none !important;
+        display:none !important;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .ossn-chat-base {
-    	display:none !important;
+        display:none !important;
     }
 }
 @media only screen and (max-width: 768px) {
     .ossn-chat-base {
-    	display:none !important;
+        display:none !important;
     }
 }
 footer { 
-	margin-bottom:50px;	
+    margin-bottom:50px;	
 }
 @-ms-viewport {
-   width: auto;
+    width: auto;
 }
 .ossn-notification-icon-poke,
 .ossn-notification-icon-poke:before {
     display: inline-block;	
 }
 .ossn-notification-icon-poke:before {
-	content: "\f0a4";
+    content: "\f0a4";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+}
+@media all and (min-width: 480px){
+    .ossn-home-container .row {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
