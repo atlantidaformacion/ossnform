@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html><head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome! : NES</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">  
-        <link rel="stylesheet" type="text/css" href="index_files/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="index_files/ossn.css">
-        <!--<script type="text/javascript" src="index_files/bootstrap.js"></script>-->
+        <title>formulario de reserva de plaza</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="index_files/formulario.css">
     </head>
     <body>
         <div class="ossn-layout-startup">           
@@ -14,7 +12,7 @@
                     <div class="row ossn-page-contents">
                         <div class="col-md-6 home-left-contents">
                             <div class="logo">
-                                <img src="index_files/logo.png">
+                                <img src="index_files/logo.png" alt="logo">
                             </div>	
                             <div class="description">
                                 Una vez introduzcas tus datos podrás descargarte el impreso de matrícula. Gracias.
@@ -24,7 +22,6 @@
                             <div class="ossn-widget ">
                                 <div class="widget-heading">Introduce tus datos</div>
                                 <div class="widget-contents">
-                                    <!--<p>It's free and always will be.</p>-->
                                     <form id="ossn-home-signup" action="http://nes4.edicionyformacion.com/action/user/register" class="ossn-form" method="post" enctype="multipart/form-data">
                                         <fieldset>
                                             <div>
@@ -34,13 +31,12 @@
                                             <div>
                                                 <input name="email" placeholder="Email" type="text">
                                             </div>
-                                            <div id="ossn-signup-errors" class="alert alert-danger"></div>
                                             <p>
                                                 He leido y acepto la
                                                 <a target="_blank" href="http://nes4.edicionyformacion.com/site/terms">Política de privacidad</a>
                                             </p>
                                             <div class="ossn-loading ossn-hidden"></div>
-                                            <input id="ossn-submit-button" class="btn btn-success" value="Descargar MATRÍCULA" type="submit">
+                                            <input class="btn btn-success" value="Descargar MATRÍCULA" type="submit">
                                         </fieldset>
                                     </form>	
                                 </div>

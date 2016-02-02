@@ -1,0 +1,394 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-feb-2016, 11:17:23
+    Author     : antoniohuertes
+*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: black;
+    background-color: #fff;
+}
+body {
+    margin: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+.ossn-home-container,
+.ossn-layout-startup {
+    min-height: 560px;
+}
+.ossn-layout-startup {
+    min-height: 560px;
+    background:url('background1400.jpg') no-repeat;
+    background-size:cover;
+}
+
+.ossn-layout-startup  footer .ossn-footer-menu a {
+    color:#fff;
+}
+.ossn-home-container,
+.ossn-layout-startup {
+    min-height: 560px;
+}
+.ossn-home-container .ossn-page-contents {
+    background: rgba(5,5,5,.14);
+    border: 1px solid rgba(238, 238, 238, 0.08);
+    padding: 10px;
+}
+.ossn-home-container {
+    padding: 5% 0px;
+}
+.ossn-home-container .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.ossn-chat-base .ossn-chat-bar .inner {
+    padding: 10px;
+    margin-left: 5px;
+    background: #F7F7F7;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
+    border: 1px solid #BAC0CD;
+    height: 35px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.ossn-chat-base .ossn-chat-bar .inner:hover {
+    background: #fff;
+}
+.friend-tab-item .data .message-reciever .text .inner {
+    padding: 5px;
+    line-height: 15px;
+    max-width: 165px;
+    word-wrap: break-word;
+}
+.home-left-contents {
+    margin-top: 5%;
+}
+.home-left-contents .logo {
+    text-align: center;
+}
+.logo img {
+    /* width: 260px; */
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.home-left-contents .description {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: justify;
+    color:#fff;
+}
+.home-left-contents .buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+.home-left-contents .some-icons i {
+    font-size: 50px;
+}
+.home-left-contents .some-icons li {
+    display: inline-block;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+
+    width: 100px;
+    height: 100px;   
+}
+.home-left-contents .some-icons {
+    margin-top: 10%;
+    text-align: center;
+}
+.home-left-contents .some-icons {
+    display:none;
+}
+.home-left-contents .description {
+    font-size: 16px;
+}
+.home-left-contents {
+    /* margin-bottom: 20px; */
+}
+.home-left-contents .description {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: justify;
+    color:#fff;
+}
+.row:after,.row:before{
+    display:table;
+    content:" "
+}
+.row:after{clear:both}
+.row{
+    margin-right:-15px;
+    margin-left:-15px
+}
+.col-md-6{
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px
+}
+.ossn-widget {
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.ossn-widget .widget-heading {
+    background: transparent;
+    border: 1px solid #eee;
+    padding: 10px;
+    font-weight: bold;
+}
+.ossn-widget .widget-contents {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.ossn-widget .widget-heading {
+    background: transparent;
+    border: 1px solid #eee;
+    padding: 10px;
+    font-weight: bold;
+}
+.ossn-widget .widget-contents {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.ossn-messages .messages-recent .widget-contents {
+    padding:0px;
+}
+.messages-with .widget-contents {
+    padding: 10px 0px;
+}
+.ossn-group-profile .group-requests-widget .widget-contents {
+    text-align:center;
+}
+#ossn-home-signup p {
+    margin-top:10px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+p {
+    font-size: 17px;
+}
+p {
+    margin: 0 0 10px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+a:-webkit-any-link {
+    cursor: auto;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+.ossn-form input[type='password'],
+.ossn-form text,
+.ossn-form select,
+.ossn-form textarea,
+.ossn-form input[type='text'] {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    display: block;
+    resize:vertical;
+}
+.ossn-form input[type='submit'] {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.ossn-form textarea#post-edit {
+    height: 125px;
+}
+.ossn-form textarea#comment-edit{
+    height: 125px;
+}
+.ossn-hidden {
+    display: none;
+}
+#ossn-wall-form .ossn-loading {
+    margin: 7px;
+}
+.ossn-loading:not(:required) {
+    -moz-animation: three-quarters-loader 1250ms infinite linear;
+    -webkit-animation: three-quarters-loader 1250ms infinite linear;
+    animation: three-quarters-loader 1250ms infinite linear;
+    border: 8px solid #38e;
+    border-right-color: transparent;
+    border-radius: 16px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 24px;
+    height: 24px;
+}
+.btn {
+    display:inline-block;
+    padding:6px 12px;
+    margin-bottom:0;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.42857143;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    -ms-touch-action:manipulation;
+    touch-action:manipulation;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-image:none;
+    border:1px solid transparent;
+    border-radius:4px
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+user agent stylesheetinput {
+    -webkit-appearance: textfield;
+    background-color: white;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border: 2px inset;
+}
+user agent stylesheetinput, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheetinput, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+.btn-success {
+    color:#fff;
+    background-color:#5cb85c;
+    border-color:#4cae4c
+}
+.btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open>.dropdown-toggle.btn-success {
+    color:#fff;
+    background-color:#449d44;
+    border-color:#398439
+}
+.btn-success.active, .btn-success:active, .open>.dropdown-toggle.btn-success {
+    background-image:none
+}
+.btn-success.disabled, .btn-success.disabled.active, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled:focus, .btn-success.disabled:hover, .btn-success[disabled], .btn-success[disabled].active, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled]:focus, .btn-success[disabled]:hover, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success.active, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:hover {
+    background-color:#5cb85c;
+    border-color:#4cae4c
+}
+.btn-success .badge {
+    color:#5cb85c;
+    background-color:#fff
+}
+@media all and (min-width: 480px){
+    .ossn-home-container .row {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .ossn-widget .widget-contents {
+        /* padding:5px; */
+    }
+}
+@media (min-width: 992px){
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+}
+@media only screen
+and (min-width : 1360px) {
+    .ossn-chat-windows-long .inner {
+        margin-top: 45px;
+        border-top: 1px solid #ccc;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
